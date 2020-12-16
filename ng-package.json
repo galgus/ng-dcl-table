@@ -6,11 +6,15 @@
   "whitelistedNonPeerDependencies": [
     "angular",
     "core-js",
+    "@galgus/ng-dcl",
     "ngx-bootstrap",
     "rxjs",
     "zone.js"
   ],
   "lib": {
-    "entryFile": "public_api.ts"
+    "entryFile": "public_api.ts",
+    "umdModuleIds": {
+      "@galgus/ng-dcl": "@galgus/ng-dcl"
+    }
   }
 }
