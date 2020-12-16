@@ -19,7 +19,7 @@
     }
   },
   "lint-staged": {
-    "*.ts": [
+    "*.{ts,html}": [
       "prettier --check 'src/**/*.ts' 'src/**/*.html'",
       "eslint --fix --quiet"
     ]
