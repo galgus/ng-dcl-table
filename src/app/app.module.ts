@@ -8,7 +8,7 @@ import { BsDropdownModule, BsDropdownConfig } from 'ngx-bootstrap/dropdown';
 import { PaginationModule } from 'ngx-bootstrap/pagination';
 import { ComponentLoaderFactory } from 'ngx-bootstrap/component-loader';
 
-import { NgDclTableModule } from './modules/ngx-dcl-table/ng-dcl-table.module';
+import { NgDclTableModule } from './modules/ng-dcl-table/ng-dcl-table.module';
 
 import { AppComponent } from './app.component';
 import { TableDemoComponent } from './demo/table-demo/table-demo.component';
