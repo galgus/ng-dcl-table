@@ -2,6 +2,14 @@
   "name": "ng-dcl-table",
   "version": "1.0.0",
   "private": false,
+  "homepage": "https://github.com/galgus/ng-dcl-table#readme",
+  "bugs": {
+    "url": "https://github.com/galgus/ng-dcl-table/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/galgus/ng-dcl-table.git"
+  },
   "scripts": {
     "build": "ng build",
     "e2e": "ng e2e",
