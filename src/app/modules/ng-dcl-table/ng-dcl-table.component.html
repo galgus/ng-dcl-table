@@ -54,7 +54,7 @@
               [identifier]="{ row: row[id], column: column.name }"
               [type]="column.component"
               [init]="column.init"
-              [data]="row[column.name]"
+              [data]="row | ngDclTableDataPipe: column.name"
             ></app-dcl>
           </td>
         </tr>

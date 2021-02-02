@@ -9,11 +9,13 @@
     "@galgus/ng-dcl",
     "ngx-bootstrap",
     "rxjs",
-    "zone.js"
+    "zone.js",
+    "lodash"
   ],
   "lib": {
     "entryFile": "public_api.ts",
     "umdModuleIds": {
+      "lodash": "lodash",
       "@galgus/ng-dcl": "@galgus/ng-dcl"
     }
   }

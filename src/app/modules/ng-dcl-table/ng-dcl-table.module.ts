@@ -7,6 +7,7 @@ import { NgDclTableComponent } from './ng-dcl-table.component';
 import { NgDclTableFilteringDirective } from './directives/ng-dcl-table-filtering.directive';
 import { NgDclTablePagingDirective } from './directives/ng-dcl-table-paging.directive';
 import { NgDclTableSortingDirective } from './directives/ng-dcl-table-sorting.directive';
+import { NgDclTableDataPipe } from '../pipes/ng-dcl-table-data.pipe';
 
 @NgModule({
   imports: [CommonModule, DclModule],
@@ -14,7 +15,8 @@ import { NgDclTableSortingDirective } from './directives/ng-dcl-table-sorting.di
     NgDclTableComponent,
     NgDclTableFilteringDirective,
     NgDclTablePagingDirective,
-    NgDclTableSortingDirective
+    NgDclTableSortingDirective,
+    NgDclTableDataPipe
   ],
   exports: [
     NgDclTableComponent,

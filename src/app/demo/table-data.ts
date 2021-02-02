@@ -1,9 +1,13 @@
-export const TableData: Array<any> = [
+export const tableData: Array<any> = [
   {
     id: 1,
     name: 'Victoria Cantrell',
     position: 'Integer Corporation',
     office: null,
+    department: {
+      id: 1,
+      name: 'Department 1'
+    },
     ext: '0839',
     startDate: '2015/08/19',
     salary: 208.178
@@ -13,6 +17,10 @@ export const TableData: Array<any> = [
     name: 'Pearl Crosby',
     position: 'In PC',
     office: 'Cambodia',
+    department: {
+      id: 1,
+      name: 'Department 1'
+    },
     ext: '8262',
     startDate: '2014/10/08',
     salary: 114.367
@@ -22,6 +30,10 @@ export const TableData: Array<any> = [
     name: 'Colette Foley',
     position: 'Lorem Inc.',
     office: 'Korea, North',
+    department: {
+      id: 1,
+      name: 'Department 1'
+    },
     ext: '8968',
     startDate: '2015/07/19',
     salary: 721.473
@@ -30,6 +42,10 @@ export const TableData: Array<any> = [
     id: 4,
     name: 'Anastasia Shaffer',
     position: 'Dolor Nulla Semper LLC',
+    department: {
+      id: 1,
+      name: 'Department 1'
+    },
     office: 'Suriname',
     ext: '7980',
     startDate: '2015/04/20',
@@ -40,6 +56,10 @@ export const TableData: Array<any> = [
     name: 'Gabriel Castro',
     position: 'Sed Limited',
     office: 'Bahrain',
+    department: {
+      id: 1,
+      name: 'Department 1'
+    },
     ext: '0757',
     startDate: '2015/03/04',
     salary: 651.35
@@ -49,6 +69,10 @@ export const TableData: Array<any> = [
     name: 'Cherokee Ware',
     position: 'Tincidunt LLC',
     office: 'United Kingdom (Great Britain)',
+    department: {
+      id: 1,
+      name: 'Department 1'
+    },
     ext: '3995',
     startDate: '2015/06/17',
     salary: 666.259
@@ -58,6 +82,10 @@ export const TableData: Array<any> = [
     name: 'Barry Moss',
     position: 'Sociis Industries',
     office: 'Western Sahara',
+    department: {
+      id: 1,
+      name: 'Department 1'
+    },
     ext: '6697',
     startDate: '2015/08/13',
     salary: 541.631
@@ -67,6 +95,10 @@ export const TableData: Array<any> = [
     name: 'Maryam Tucker',
     position: 'Elit Pede Malesuada Inc.',
     office: 'Brazil',
+    department: {
+      id: 1,
+      name: 'Department 1'
+    },
     ext: '5203',
     startDate: '2014/10/02',
     salary: 182.294
@@ -76,6 +108,10 @@ export const TableData: Array<any> = [
     name: 'Constance Clayton',
     position: 'Auctor Velit Aliquam LLP',
     office: 'United Arab Emirates',
+    department: {
+      id: 1,
+      name: 'Department 1'
+    },
     ext: '4204',
     startDate: '2015/08/01',
     salary: 218.597
@@ -85,6 +121,10 @@ export const TableData: Array<any> = [
     name: 'Rogan Tucker',
     position: 'Arcu Vestibulum Ante Associates',
     office: 'Jersey',
+    department: {
+      id: 1,
+      name: 'Department 1'
+    },
     ext: '0885',
     startDate: '2015/01/04',
     salary: 861.632

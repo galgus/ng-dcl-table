@@ -19,6 +19,7 @@
     "packagr": "ng-packagr -p ng-package.json",
     "prettier": "prettier --check 'src/**/*.ts' 'src/**/*.html' --write",
     "start": "ng serve",
+    "start:hmr": "ng serve --hmr",
     "test": "ng test"
   },
   "husky": {
@@ -43,6 +44,7 @@
     "@angular/router": "^11.0.4",
     "@galgus/ng-dcl": "^1.0.0",
     "core-js": "^2.5.4",
+    "lodash": "^4.17.20",
     "ngx-bootstrap": "^5.5.0",
     "rxjs": "^6.6.3",
     "tslib": "^2.0.0",

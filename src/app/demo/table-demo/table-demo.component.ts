@@ -1,6 +1,6 @@
 import { Component, ComponentRef, OnInit } from '@angular/core';
 
-import { TableData } from './../table-data';
+import { tableData } from './../table-data';
 import { ButtonsComponent } from '../buttons/buttons.component';
 import { EditableComponent } from '../editable/editable.component';
 
@@ -13,7 +13,7 @@ export class TableDemoComponent implements OnInit {
   public _func: any = this.onCellInit.bind(this);
   public _func2: any = this.onDataInit.bind(this);
   public _arr: { [row: number]: { [column: string]: EditableComponent } };
-  public data: Array<any> = TableData;
+  public data: Array<any> = tableData;
   public rows: Array<any> = [];
   public summary = 'descripcion';
 
@@ -42,6 +42,15 @@ export class TableDemoComponent implements OnInit {
       component: EditableComponent,
       init: this._func2,
       sort: 'asc',
+      configurable: true,
+      show: true
+    },
+    {
+      title: 'Department',
+      name: ['department', 'name'],
+      component: null,
+      init: null,
+      sort: null,
       configurable: true,
       show: true
     },
