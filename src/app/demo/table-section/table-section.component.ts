@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./table-section.component.css']
 })
 export class TableSectionComponent implements OnInit {
-  public name: string = name;
+  public name = '';
   public summary = '';
   public src = '';
   public titleDoc = '';
