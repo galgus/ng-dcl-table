@@ -4,20 +4,18 @@
     "src/polyfills.ts"
   ],
   "include": [
-    "src/**/*.ts",
     "src/**/*.d.ts"
   ],
-  "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
-    "importHelpers": true,
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "target": "es6",
+    "target": "es2015",
+    "module": "esnext",
+    "baseUrl": "src",
     "typeRoots": [
       "node_modules/@types"
     ],
