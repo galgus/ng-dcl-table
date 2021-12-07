@@ -7,7 +7,7 @@ import { EditableComponent } from '../editable/editable.component';
 @Component({
   selector: 'app-table-demo',
   templateUrl: './table-demo.component.html',
-  styleUrls: ['./table-demo.component.css']
+  styleUrls: ['./table-demo.component.scss']
 })
 export class TableDemoComponent implements OnInit {
   public _func: any = this.onCellInit.bind(this);
