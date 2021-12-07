@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-editable',
-  templateUrl: './editable.component.html',
-  styleUrls: ['./editable.component.css']
+  templateUrl: './editable.component.html'
 })
 export class EditableComponent implements OnInit {
   public data: any;
@@ -11,14 +10,14 @@ export class EditableComponent implements OnInit {
 
   private _editable = false;
 
+  constructor() {}
+
   get editable(): boolean {
     return this._editable;
   }
   set editable(editable: boolean) {
     this._editable = editable;
   }
-
-  constructor() {}
 
   ngOnInit() {}
 }
