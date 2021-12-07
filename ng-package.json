@@ -1,8 +1,6 @@
 {
   "$schema": "./node_modules/ng-packagr/ng-package.schema.json",
-  "assets": [
-    ".npmrc"
-  ],
+  "assets": [".npmrc"],
   "allowedNonPeerDependencies": [
     "angular",
     "core-js",
@@ -13,10 +11,6 @@
     "lodash"
   ],
   "lib": {
-    "entryFile": "public_api.ts",
-    "umdModuleIds": {
-      "lodash": "lodash",
-      "@galgus/ng-dcl": "@galgus/ng-dcl"
-    }
+    "entryFile": "public_api.ts"
   }
 }

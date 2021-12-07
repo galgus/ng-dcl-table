@@ -10,11 +10,10 @@ import {
 @Component({
   selector: 'app-ng-dcl-table',
   templateUrl: './ng-dcl-table.component.html',
-  styleUrls: ['./ng-dcl-table.component.css']
+  styleUrls: ['./ng-dcl-table.component.scss']
 })
 export class NgDclTableComponent implements OnChanges {
-  // Table values
-  @Input() public rows: Array<any> = [];
+  @Input() public rows: any[] = [];
   @Input() public config: any = {};
   @Input() public id = 'id';
   @Input() public cSelectAll: any = {};
@@ -23,21 +22,14 @@ export class NgDclTableComponent implements OnChanges {
 
   @Output() public tableChanged = new EventEmitter<any>();
 
-  private _columns: Array<any> = [];
+  private _columns: any[] = [];
 
   constructor() {}
-
-  ngOnChanges(changes: SimpleChanges) {
-    const value = 'columns';
-    if (changes[value]) {
-      this._columns = changes[value].currentValue;
-    }
-  }
 
   @Input() public get columns() {
     return this._columns;
   }
-  public set columns(values: Array<any>) {
+  public set columns(values: any[]) {
     values.forEach((value) => {
       const column = this._columns.find((col) => col.name === value.name);
       if (column) {
@@ -48,16 +40,24 @@ export class NgDclTableComponent implements OnChanges {
     });
   }
 
-  public get configColumns() {
-    const sortColumns: Array<any> = [];
+  configColumns() {
+    const columns: any[] = [];
 
     this.columns.forEach((column) => {
       if (column.sort) {
-        sortColumns.push(column);
+        columns.push(column);
       }
     });
 
-    return { columns: sortColumns };
+    return { columns };
+  }
+
+  ngOnChanges(changes: SimpleChanges) {
+    const value = 'columns';
+
+    if (changes[value]) {
+      this._columns = changes[value].currentValue;
+    }
   }
 
   onChangeTable(column: any) {
