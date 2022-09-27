@@ -14,6 +14,6 @@ export class NgDclTableDataPipe implements PipeTransform {
       field = colName;
     }
 
-    return get(row, field) ?? '';
+    return get(row, field, '');
   }
 }
