@@ -1,6 +1,6 @@
 {
   "name": "@galgus/ng-dcl-table",
-  "version": "15.1.1",
+  "version": "15.1.2",
   "private": false,
   "homepage": "https://github.com/galgus/ng-dcl-table#readme",
   "bugs": {
@@ -41,7 +41,7 @@
     "@angular/platform-browser": "15.1.1",
     "@angular/platform-browser-dynamic": "15.1.1",
     "@angular/router": "15.1.1",
-    "@galgus/ng-dcl": "15.1.1",
+    "@galgus/ng-dcl": "15.1.2",
     "core-js": "3.27.2",
     "lodash": "4.17.21",
     "ngx-bootstrap": "7.1.2",
